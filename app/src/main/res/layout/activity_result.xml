@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/azulEscuro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Result">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTitulo"
+        android:text="Informações da Temperatura"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCidadeRecebida"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:id="@+id/imgClima"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/sol" />
+
+
+    <TextView
+        android:id="@+id/txtTemperatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtMensagem"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnVoltar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/verde"
+        app:cornerRadius="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:rippleColor="@color/verdeEscuro"
+        android:elevation="4dp"
+        app:strokeColor="@color/verde"
+        app:strokeWidth="0dp"/>
+
+
+</LinearLayout>

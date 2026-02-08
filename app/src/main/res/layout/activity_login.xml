@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@color/azulEscuro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Views.LoginActivity">
+
+    <ImageView
+        android:layout_width="113dp"
+        android:layout_height="144dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="48dp"
+        android:src="@drawable/pincodeuser"
+        android:text="Login de Perfil"
+        android:textColor="@color/verde" />
+
+    <!-- Email Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxCornerRadiusTopStart="10sp"
+        app:boxCornerRadiusTopEnd="10sp"
+        app:boxCornerRadiusBottomStart="10sp"
+        app:boxCornerRadiusBottomEnd="10sp"
+        app:hintTextColor="@color/verde"
+        android:layout_marginBottom="10sp"
+        app:boxStrokeColor="@color/verde"
+        app:boxBackgroundColor="#70FFFFFF"
+        android:id="@+id/txtEmailLogin"
+        android:hint="Email"
+        style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox.Dense">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Password Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxCornerRadiusTopStart="10sp"
+        app:boxCornerRadiusTopEnd="10sp"
+        app:boxCornerRadiusBottomStart="10sp"
+        app:boxCornerRadiusBottomEnd="10sp"
+        app:hintTextColor="@color/verde"
+        android:layout_marginBottom="10sp"
+        app:boxStrokeColor="@color/verde"
+        android:id="@+id/txtPasswordLogin"
+        app:boxBackgroundColor="#70FFFFFF"
+        android:hint="Password"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/verde"
+        style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox.Dense">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Entrar"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/verde"
+        app:cornerRadius="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:rippleColor="@color/verdeEscuro"
+        android:elevation="4dp"
+        app:strokeColor="@color/verde"
+        app:strokeWidth="0dp"/>
+
+    <TextView
+        android:id="@+id/txtRegistoLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Não tem uma conta? Registe-se"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:textColor="@color/verde"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtRecPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recuperar Password"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:textColor="@color/verde"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

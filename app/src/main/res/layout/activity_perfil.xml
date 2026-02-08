@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@color/azulEscuro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".Views.PerfilActivity">
+
+    <!-- TÍTULO -->
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Criar Perfil:"
+        android:textColor="@color/verde"
+        android:layout_marginTop="40dp"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- FOTO E BOTÃO -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="24dp">
+
+        <ImageView
+            android:id="@+id/imgFotoProfile"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@android:drawable/ic_menu_camera"
+            android:scaleType="centerCrop"
+            android:background="#DDDDDD"
+            android:layout_marginEnd="16dp"/>
+
+        <!-- CONTAINER PARA OS BOTÕES COM MESMO TAMANHO -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginStart="8dp">
+
+            <!-- BOTÃO + -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTirarFoto"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/verde"
+                app:cornerRadius="10dp"
+                app:rippleColor="@color/verdeEscuro"
+                android:elevation="4dp"/>
+
+            <!-- BOTÃO SELECIONAR FOTO -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEscolherFoto"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="Selecionar Foto"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/verde"
+                app:cornerRadius="10dp"
+                app:rippleColor="@color/verdeEscuro"
+                android:elevation="4dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- CAMPO NOME -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxCornerRadiusTopStart="10sp"
+        app:boxCornerRadiusTopEnd="10sp"
+        app:boxCornerRadiusBottomStart="10sp"
+        app:boxCornerRadiusBottomEnd="10sp"
+        app:hintTextColor="@color/verde"
+        android:layout_marginBottom="12sp"
+        app:boxStrokeColor="@color/verde"
+        app:boxBackgroundColor="#70FFFFFF"
+        android:hint="Nome Completo"
+        style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox.Dense">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- CAMPO EMAIL -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxCornerRadiusTopStart="10sp"
+        app:boxCornerRadiusTopEnd="10sp"
+        app:boxCornerRadiusBottomStart="10sp"
+        app:boxCornerRadiusBottomEnd="10sp"
+        app:hintTextColor="@color/verde"
+        android:layout_marginBottom="12sp"
+        app:boxStrokeColor="@color/verde"
+        app:boxBackgroundColor="#70FFFFFF"
+        android:hint="Email"
+        style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox.Dense">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- CAMPO CIDADE -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxCornerRadiusTopStart="10sp"
+        app:boxCornerRadiusTopEnd="10sp"
+        app:boxCornerRadiusBottomStart="10sp"
+        app:boxCornerRadiusBottomEnd="10sp"
+        app:hintTextColor="@color/verde"
+        android:layout_marginBottom="12sp"
+        app:boxStrokeColor="@color/verde"
+        app:boxBackgroundColor="#70FFFFFF"
+        android:hint="Cidade"
+        style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox.Dense">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtCidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- CAMPO CONTACTO -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxCornerRadiusTopStart="10sp"
+        app:boxCornerRadiusTopEnd="10sp"
+        app:boxCornerRadiusBottomStart="10sp"
+        app:boxCornerRadiusBottomEnd="10sp"
+        app:hintTextColor="@color/verde"
+        android:layout_marginBottom="12sp"
+        app:boxStrokeColor="@color/verde"
+        app:boxBackgroundColor="#70FFFFFF"
+        android:hint="Contacto (Telefone)"
+        style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox.Dense">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtContacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- BOTÃO ATUALIZAR -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAtualizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Atualizar Perfil"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/verde"
+        app:cornerRadius="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:rippleColor="@color/verdeEscuro"
+        android:elevation="4dp"
+        app:strokeColor="@color/verde"
+        app:strokeWidth="0dp"/>
+
+    <!-- BOTÃO ELIMINAR -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnEliminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eliminar Perfil"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/verde"
+        app:cornerRadius="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:rippleColor="@color/verdeEscuro"
+        android:elevation="4dp"
+        app:strokeColor="@color/verde"
+        app:strokeWidth="0dp"/>
+
+    <!-- BOTÃO SAIR -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sair"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/verde"
+        app:cornerRadius="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:rippleColor="@color/verdeEscuro"
+        android:elevation="4dp"
+        app:strokeColor="@color/verde"
+        app:strokeWidth="0dp"/>
+
+    <!-- TEXTO VOLTAR -->
+    <TextView
+        android:id="@+id/txtVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:textColor="@color/verde"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

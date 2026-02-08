@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/azulEscuro">
+
+    <!-- TÍTULO -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cidade"
+        android:textColor="@color/verde"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <!-- CAMPO CIDADE -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:hintTextColor="@color/verde"
+        android:layout_marginBottom="16dp"
+        app:boxStrokeColor="@color/verde"
+        app:boxBackgroundColor="#70FFFFFF"
+        android:hint="Insira a cidade a pesquisar"
+        style="@style/Widget.Material3.TextInputEditText.FilledBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editarCidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- BOTÃO PESQUISAR -->
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:id="@+id/btnEnviar"
+        android:text="Pesquisar"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/verde"
+        app:cornerRadius="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:rippleColor="@color/verdeEscuro"
+        android:elevation="4dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp" />
+
+    <!-- BOTÃO IR PARA PERFIL -->
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:id="@+id/btnGoPerfil"
+        android:text="Ir para Perfil"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/verde"
+        app:cornerRadius="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:rippleColor="@color/verdeEscuro"
+        android:elevation="4dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp" />
+
+
+</LinearLayout>
