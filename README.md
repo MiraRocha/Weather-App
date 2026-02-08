@@ -1,6 +1,6 @@
 # Aplicação de Meteorologia (Weather App)
 
-Uma simples aplicação Android desenvolvida em Kotlin que permite aos utilizadores consultar a meteorologia atual de qualquer cidade. A aplicação utiliza a API da OpenWeatherMap para obter os dados em tempo real e integra-se com o Firebase para autenticação de utilizadores e para guardar o histórico de pesquisas.
+Uma simples aplicação Android desenvolvida em Kotlin, em contexto académico que permite aos utilizadores consultar a meteorologia atual de qualquer cidade. A aplicação utiliza a API da OpenWeatherMap para obter os dados em tempo real e integra-se com o Firebase para autenticação de utilizadores e para guardar o histórico de pesquisas.
 
 ## Funcionalidades
 
