@@ -53,3 +53,7 @@ Para executar este projeto localmente, siga os seguintes passos:
 
 5.  **Sincronizar e Executar:**
     *   Sincronize o projeto com os ficheiros Gradle e execute a aplicação num emulador ou dispositivo físico.
+
+
+<img width="1414" height="1168" alt="weatherApp" src="https://github.com/user-attachments/assets/5bf1659d-64af-41d4-a090-707e6a631e63" />
+
